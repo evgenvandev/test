@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Менеджер контактов на Java
-subtitle: Чась-1 Менеджер контактов - данные в коде
+title: Список контактов на Java
+subtitle: Список контактов на Java - Часть-1 (данные в коде)
 tags: [java]
 comments: true
 ---
@@ -23,7 +23,7 @@ comments: true
 
 Класс _**Contact**_
 
-```java
+{% highlight java linenos%}
 package edu.javacourse.contact.entity;
 
 /**
@@ -51,4 +51,4 @@ public class Contact {
         this.email = email;
     }
 }
-```
+{% endhighlight %}
