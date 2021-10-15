@@ -23,6 +23,8 @@ comments: true
 
 ![Диаграмма классов ContactManager](/assets/img/ContactProject.png)
 
+![Диаграмма классов ContactManager](/assets/img/ContactProject.jpg)
+
 Класс _**Contact**_
 
 ```java
