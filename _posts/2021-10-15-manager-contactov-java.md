@@ -23,7 +23,7 @@ comments: true
 
 Класс _**Contact**_
 
-{% highlight java linenos%}
+```java
 package edu.javacourse.contact.entity;
 
 /**
@@ -51,4 +51,4 @@ public class Contact {
         this.email = email;
     }
 }
-{% endhighlight %}
+```
