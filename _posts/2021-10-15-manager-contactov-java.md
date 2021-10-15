@@ -21,7 +21,7 @@ comments: true
 Также предлагаю делать свой вариант — например список машин в автосалоне, список заказов пиццы, 
 список книг. Пусть он будет выглядеть практически так же, как мой, но это будет ваш собственный проект.
 
-![Диаграмма классов ContactManager](../assets/img/ContactProject.jpg){: .mx-auto.d-block :}
+![Диаграмма классов ContactManager](/assets/img/ContactProject.jpg)
 
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
 
