@@ -21,3 +21,34 @@ comments: true
 Также предлагаю делать свой вариант — например список машин в автосалоне, список заказов пиццы, 
 список книг. Пусть он будет выглядеть практически так же, как мой, но это будет ваш собственный проект. 
 
+Класс _**Contact**_
+
+```java
+package edu.javacourse.contact.entity;
+
+/**
+ *  Класс для хранения данных контакта
+ */
+public class Contact {
+    // Идентификатор контакта
+    private Long contactId;
+    // Имя
+    private String firstName;
+    // Фамилия
+    private String lastName;
+    // Телефон
+    private String phone;
+    // email
+    private String email;
+    
+    public Contact() {
+    }
+    
+    public Contact(String firstName, String lastName, String phone, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
+    }
+}
+```
