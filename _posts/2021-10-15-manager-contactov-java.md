@@ -27,7 +27,7 @@ comments: true
 
 ![Plane-2](/assets/img/Plane-2.jpg)
 
-![Plane-3](/assets/img/Plane-3.jpg)
+![Plane-3](/assets/img/avatar-icon.png)
 
 Класс _**Contact**_
 
