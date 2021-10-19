@@ -23,7 +23,7 @@ comments: true
 
 ![Plane-original](/assets/img/small-ge7a2b3680_1280.png)
 
-![Plane-1](https://github.com/evgenvandev/test/blob/master/assets/img/Plane-1.jpg "Файл Plane-1.jpg")
+![Plane-1](https://raw.githubusercontent.com/evgenvandev/test/master/assets/img/Plane-1.jpg "Файл Plane-1.jpg")
 
 ![Plane-2](/assets/img/Plane-2.jpg)
 
