@@ -153,3 +153,86 @@ public class Contact {
     }
 }
 ```
+
+Класс _**ContactManager**_
+
+Здесь тоже особых сложностей нет - в данном случае я просто перечислил те функции, которые мы хотели реализовать. Выглядит это конечно 
+несколько натянуто, т.к. кроме вызовов методов для работы с хранилищем в них ничего нет, но мы уже обсуждали возможность расширения. 
+Единственное, на что надо обратить внимание - мы используем интерфейс _**ContactDAO**_, а не реальный класс. Почему мы так сделали - я 
+тоже объяснял выше.
+
+```java
+package edu.javacourse.contact.business;
+
+import edu.javacourse.contact.dao.ContactDAO;
+import edu.javacourse.contact.dao.ContactDAOFactory;
+import edu.javacourse.contact.entity.Contact;
+import java.util.List;
+
+/**
+ * Класс для реализации функции над списком контактов
+ */
+public class ContactManager {
+    private ContactDAO dao;
+    
+    public ContactManager() {
+        dao = ContactDAOFactory.getContactDAO();
+    }
+    
+    // Добавление контакта - возвращает ID добавленного контакта
+    public Long addContact(Contact contact) {
+        return dao.addContact(contact);
+    }
+    
+    // Редактирование контакта
+    public void updateContact(Contact contact) {
+        dao.updateContact(contact);
+    }
+    
+    // Удаление контакта по его ID
+    public void deleteContact(Long contactId) {
+        dao.deleteContact(contactId);
+    }
+    
+    // Получение одного контакта
+    public Contact getContact(Long contactId) {
+        return dao.getContact(contactId);
+    }
+    
+    // Получение списка контактов
+    public List<Contact> findContacts() {
+        return dao.findContacts();
+    }
+}
+```
+
+Почему мы создаём экземпляр _**ContactDAO**_ с использованием класса _**ContactDAOFactory**_ я объясню чуть позже.
+
+Интерфейс _**ContactDAO**_
+
+Прибавочка _DAO_ - это _Data Access Object_ - объект доступа к данным. Для работы с хранилищем любого типа мы создали интерфейс, который 
+определяет контракт, по которому любое хранилище для работы с контактами должно реализовать определённый набор функций. Это позволит нам в 
+дальнейшем заменять реализации хранилища без особых хлопот.
+
+```java
+package edu.javacourse.contact.dao;
+
+import edu.javacourse.contact.entity.Contact;
+import java.util.List;
+
+/**
+ * Интерфейс для определения функций хранилища данных о контактах
+ */
+public interface ContactDAO {
+    // Добавление контакта - возвращает ID добавленного контакта
+    public Long addContact(Contact contact);
+    // Редактирование контакта
+    public void updateContact(Contact contact);
+    // Удаление контакта по его ID
+    public void deleteContact(Long contactId);
+    // Получение контакта по его ID
+    public Contact getContact(Long contactId);
+    // Получение списка контактов
+    public List<Contact> findContacts();
+}
+```
