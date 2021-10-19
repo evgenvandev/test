@@ -2,7 +2,7 @@
 layout: post
 title: Список контактов на Java
 subtitle: Список контактов на Java - Часть-1 (данные в коде)
-tags: [java]
+tags: [java, contact_list]
 comments: true
 ---
 
