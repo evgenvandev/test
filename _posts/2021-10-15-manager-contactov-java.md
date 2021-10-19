@@ -25,6 +25,10 @@ comments: true
 
 Класс _**Contact**_
 
+Этот класс не должен вызывать каких-то больших вопросов. Там перечислены нужные поля и для них сделаны сетеры и гетеры. Может вызывать 
+сомнение набор конструкторов - я сделал для всех полей (в случае редактирования) и все поля кроме ИД (id) - для случая добавления. Мне 
+показалось, что так будет удобно. Переопределение метода _**toString**_ сделано для удобства вывода информации о контакте.
+
 ```java
 package edu.javacourse.contact.entity;
 
@@ -52,5 +56,23 @@ public class Contact {
         this.phone = phone;
         this.email = email;
     }
+    
+    public Contact(Long contactId, String firstName, String lastName, String phone, String email) {
+        this.contactId = contactId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
+    }
+    
+    public Long getContactId() {
+        return contactId;
+    }
+    
+    public void setContactId(Long contactId) {
+        this.contactId = contactId;
+    }
+    
+    
 }
 ```
