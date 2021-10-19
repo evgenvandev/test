@@ -21,9 +21,9 @@ comments: true
 Также предлагаю делать свой вариант — например список машин в автосалоне, список заказов пиццы, 
 список книг. Пусть он будет выглядеть практически так же, как мой, но это будет ваш собственный проект.
 
-![Plane-original](/assets/img/small-ge7a2b3680_1280.png)
+![Plane-original](https://raw.githubusercontent.com/evgenvandev/test/gh-pages/assets/img/small-ge7a2b3680_1280.png "Оригинальный файл формата .png")
 
-![Plane-1](https://raw.githubusercontent.com/evgenvandev/test/master/assets/img/Plane-1.jpg "Файл Plane-1.jpg")
+![Plane-1](https://raw.githubusercontent.com/evgenvandev/test/gh-pages/assets/img/Plane-1.jpg "Файл Plane-1.jpg")
 
 ![Plane-2](/assets/img/Plane-2.jpg)
 
